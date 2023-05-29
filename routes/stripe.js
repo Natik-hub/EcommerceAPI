@@ -10,7 +10,7 @@ router.post('/payment', (req, res) => {
     {
       source: req.body.tokenId,
       amount: req.body.amount * 70,
-      currency: 'ETH',
+      currency: 'birr',
       description: 'Software development services',
     },
     (err, stripeRes) => {
